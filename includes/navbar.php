@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title></title>
     <link rel="stylesheet" href="/gym-management-system/asset/css/stylehome.css">
 </head>
 
@@ -30,6 +30,7 @@
                 <a href="#findBmi">
                     <li>BMI</li>
                 </a>
+                <a href=""> <li>Login</li></a>
             </ul>
         </div>
     </div>
