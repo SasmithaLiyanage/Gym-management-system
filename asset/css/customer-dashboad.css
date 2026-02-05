@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.main {
+  width: 100%;
+  height: 100vh;
+  background-color: #1e1e1e;
+
+  overflow: scroll;
+  scrollbar-width: none;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+
+  background-image: url(/images/welcome.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.container {
+  width: 90%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main-details-background {
+  width: 100%;
+  height: 40vh;
+
+  background-image: url(/images/Animated\ Shape\ \(3\).svg);
+  background-color: #222222;
+
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+.main-detail {
+  padding: 15px 0px 0px 5px;
+  width: 60%;
+  height: 40vh;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 5px;
+  background-color: #222222;
+}
+.profile {
+  width: 20vh;
+  height: 20vh;
+
+  border-radius: 50%;
+  background-color: #dc2626;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile .icon {
+  width: 13vh;
+  height: 13vh;
+
+  background-image: url("/images/svgs/profile.svg");
+  background-position: center;
+  background-size: cover;
+}
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  line-height: 28px;
+  height: 9vh;
+}
+.profile-details h1 {
+  font-family: "NCL Monster Beast";
+  font-weight: 100;
+  font-size: 35px;
+  color: #dc2626;
+}
+.profile-details p {
+  font-family: "salena";
+
+  font-size: 18px;
+  color: #ffffff7a;
+  text-transform: capitalize;
+}
+
+.navigation {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.navigation a {
+  text-decoration: none;
+}
+.navigation ul {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  list-style: none;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 5px;
+}
+.navigation ul li {
+  text-decoration: none;
+  padding: 10px;
+  background-color: #313030;
+
+  font-family: "salena";
+
+  font-size: 15px;
+  color: #ffffff7a;
+}
+
+.navigation ul li:hover {
+  background-color: #dadada;
+  color: #dc2626;
+}
+
+/* dashboad stylesheets */
+.dashboard-body {
+  margin-top: 20px;
+  width: 100%;
+  height: 110vh;
+  background-color: #222222;
+  border: 2px #4d4d4da4 solid;
+}
+
+.package-details {
+  width: 100%;
+  height: 15vh;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+.active-package {
+  width: 40%;
+  background-color: #313030;
+  display: flex;
+  flex-direction: row;
+
+  gap: 10px;
+  padding: 10px;
+
+  justify-content: center;
+  align-items: center;
+  border-left: 3px #dc2626d4 solid;
+  border-bottom: 3px #dc2626d4 solid;
+  border-top: 1px #dc26268a solid;
+  border-right: 1px #dc26268a solid;
+}
+.active-package h1 {
+  font-family: "NCL Monster Beast";
+  font-weight: 100;
+  font-size: 35px;
+  color: white;
+}
+.leftactive {
+  width: 10%;
+}
+
+/* dashboad */
+
+.dashboard {
+  width: 100%;
+  height: 20vh;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+
+  transform: translate(180rad);
+}
+
+.dashboard .card {
+  position: relative;
+  width: 22%;
+  height: 18vh;
+  background-color: #21343840;
+  border: 3px rgba(255, 255, 255, 0.061) solid;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "GeophyDEMO";
+  color: white;
+
+  padding: 10px;
+  font-size: 10px;
+}
+
+.circle {
+  background-color: #dc2626;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.circle2 {
+  background-color: #dc2626;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+.circle3 {
+  background-color: #dc2626;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.circle4 {
+  background-color: #dc2626;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+
+  animation: blink-border 1s ease-in-out;
+}
+@keyframes blink-border {
+  /* At 50% of the animation duration, the border color changes */
+  50% {
+    background-color: #dc262659; /* Red color for the blink effect */
+  }
+}
+.dashboard .card span {
+  font-family: "NCL Monster Beast";
+  font-weight: 100;
+  font-size: 40px;
+  color: #dc2626;
+}
