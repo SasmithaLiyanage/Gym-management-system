@@ -1,0 +1,978 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+
+  background-color: rgb(41, 41, 41);
+
+  overflow: scroll;
+  scrollbar-width: none;
+}
+
+.container {
+  width: 100%;
+  background: linear-gradient(#dabdbd00, #000000);
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 6.5vh;
+  padding: 0 30px 0px 30px;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+
+  background-color: rgb(29, 29, 29);
+  border-bottom: 1px rgba(255, 255, 255, 0.224) solid;
+
+  box-shadow: 1px 1px 20px 1px #00000074;
+}
+
+.navbar .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "NCL Monster Beast";
+  font-size: 15px;
+  color: #dc2626;
+}
+
+.navbar .logo img {
+  width: 70px;
+  height: 70px;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  list-style-type: none;
+  color: white;
+
+  font-family: "GeophyDEMO";
+}
+
+.navbar .list a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar .list li {
+  padding: 15px 25px 15px 25px;
+  border-right: 2px #fdfdfd2e solid;
+}
+
+.navbar .list #logout {
+  padding: 10px 20px 10px 20px;
+  
+  background-color: transparent;
+  color: #dc2626;
+  border-right: none;
+}
+.navbar .list #logout img{
+  width: 20px;
+  height: 20px;
+}
+
+.navbar .list #logout:hover {
+  padding: 11px 20px 11px 20px;
+  background-color: #dc2626;
+  color: white;
+  border-right: none;
+}
+.navbar .list li:hover {
+  background-color: #dc2626;
+  padding: 15px 25px 15px 25px;
+}
+
+.navbar .list li:active {
+  background-color: #dc2626;
+  padding: 15px 25px 15px 25px;
+}
+
+.hero {
+  width: 100%;
+  height: 70vh;
+
+  background-image:
+    linear-gradient(#dc262600, #dc262600, #000000), url("/gym-management-system/asset/images/1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  transition: all ease-in-out;
+
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.hero .timeanddate {
+  width: 40%;
+  height: 15vh;
+
+  font-family: "NCL Monster Beast";
+  color: white;
+
+  background-color: #1e1e1e;
+  border: 3px rgba(255, 255, 255, 0.061) solid;
+  border-left: none;
+
+  line-height: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+
+  padding-left: 5em;
+}
+
+.hero .timeanddate h1 {
+  font-size: 70px;
+}
+
+.hero .timeanddate h3 {
+  padding-left: 5px;
+  text-transform: capitalize;
+  font-family: "salena";
+  font-size: 18px;
+}
+
+.hero .timeanddate h2 {
+  padding-left: 10px;
+  font-family: "GeophyDEMO";
+  font-size: 20px;
+}
+
+.dashboard {
+  width: 100%;
+  height: 15vh;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+  background-image: url(/gym-management-system/asset/images/Animated\ Shape\ \(3\).svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+
+  background-color: #1e1e1e;
+
+  transform: translate(180rad);
+}
+
+.dashboard .card {
+  margin-top: -15em;
+  position: relative;
+  width: 20%;
+  height: 20vh;
+  background-color: rgb(24, 24, 24);
+  border: 3px rgba(255, 255, 255, 0.061) solid;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "GeophyDEMO";
+  color: white;
+
+  padding: 10px;
+  font-size: 10px;
+}
+
+.circle {
+  background-color: #dc2626;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.circle2 {
+  background-color: #dc2626;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.circle3 {
+  background-color: #dc2626;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.circle4 {
+  background-color: #dc2626;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+
+  animation: blink-border 1s ease-in-out;
+}
+
+@keyframes blink-border {
+
+  /* At 50% of the animation duration, the border color changes */
+  50% {
+    background-color: #dc262659;
+    /* Red color for the blink effect */
+  }
+}
+
+.dashboard .card span {
+  font-family: "NCL Monster Beast";
+  font-weight: 100;
+  font-size: 40px;
+  color: #dc2626;
+}
+
+/* dshoboad 2 */
+
+.dashboard2 {
+  background-color: #313030;
+  width: 100%;
+  height: 22vh;
+  display: flex;
+  flex-direction: row;
+
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+}
+
+.dashboard2-copy {
+  background-image: url(/gym-management-system/asset/images/Animated\ Shape\ \(3\).svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+
+  width: 100%;
+  height: 5vh;
+  background-color: #1e1e1e;
+  transform: rotate(180deg);
+}
+
+.animated-background {
+  background-image: url(/gym-management-system/asset/images/Animated\ Shape\ \(3\).svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+
+  width: 100%;
+  height: 10vh;
+  background-color: #1e1e1e;
+}
+
+.dashboard2-content {
+  width: 23%;
+
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  gap: 5px;
+}
+
+.dashboard2-content .right {
+  font-family: "salena";
+}
+
+.dashboard2-content .right h2 {
+  font-size: 25px;
+}
+
+.dashboard2-content .right p {
+  color: #ffffff7a;
+  font-size: 10px;
+}
+
+.dashboard2-content .left img {
+  width: 60px;
+  height: 40px;
+}
+
+.meal-plan {
+  width: 100%;
+  height: 50vh;
+  background-color: rgb(24, 24, 24);
+  border-top: 2px #fdfdfd2e solid;
+}
+
+.bmi-section {
+  width: 100%;
+  height: 40vh;
+
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.bmi-detail {
+  width: 50%;
+  padding: 10px;
+  border-right: 4px #fdfdfd2e solid;
+}
+
+.bmi-detail h1 {
+  font-family: "NCL Monster Beast";
+  font-weight: 100;
+  font-size: 40px;
+  color: #dc2626;
+}
+
+.bmi-detail p {
+  font-family: "salena";
+
+  font-size: 15px;
+  color: #ffffff7a;
+}
+
+.bmi-input {
+  width: 12%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff7a;
+
+  font-family: "salena";
+
+  gap: 10px;
+  background-color: #31303093;
+  padding: 15px;
+}
+
+.bmi-input label {
+  font-size: 12px;
+}
+
+.bmi-input input::placeholder {
+  color: #ffffff7a;
+  opacity: 1;
+}
+
+.bmi-input input {
+  width: 19vh;
+  height: 5vh;
+  background-color: #313030;
+  border: none;
+  font-family: "NCL Monster Beast";
+  color: #ffffff7a;
+
+  text-align: center;
+  font-size: 20px;
+}
+
+.bmi-input button {
+  background-color: #dc2626;
+  color: white;
+
+  padding: 10px 20px 10px 20px;
+  border: none;
+  font-family: "NCL Monster Beast";
+  cursor: pointer;
+}
+
+.bmi-input button:hover {
+  background-color: white;
+  color: #dc2626;
+
+  padding: 10px 20px 10px 20px;
+  border: none;
+  font-family: "NCL Monster Beast";
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.bmi-output {
+  width: 25%;
+
+  font-family: "NCL Monster Beast";
+  color: #ffffff7a;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bmi-output p {
+  color: #ffffff7a;
+  font-size: 15px;
+
+  font-family: "salena";
+}
+
+/* package section */
+
+.packages-section {
+  width: 100%;
+  height: 70vh;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  align-items: center;
+  gap: 20px;
+
+  background-color: #bb1e1ef6;
+}
+
+.package-card {
+  width: 20%;
+  height: 50vh;
+  background-color: #313030;
+  padding: 20px;
+  transition: all 0.2s ease-out;
+  border: 2px #ffffff07 solid;
+}
+
+.package-card:hover {
+  margin-top: -10px;
+  border: 2px #ffffff24 solid;
+  box-shadow: 2px 2px 15px 2px#1e1e1e6f;
+}
+
+.package-card .card-head {
+  padding-left: 10px;
+  height: 28%;
+}
+
+.package-card .card-head h1 {
+  font-family: "NCL Monster Beast";
+
+  font-size: 35px;
+  color: #dc2626;
+  line-height: 30px;
+}
+
+.package-card .card-head p {
+  color: #ffffff7a;
+  font-size: 12px;
+  font-family: "salena";
+}
+
+.package-card .card-detail {
+  height: 60%;
+  padding: 10px 0px 10px 10px;
+}
+
+.package-card .card-detail ul li {
+  color: #ffffffb1;
+  font-size: 15px;
+  font-family: "salena";
+  padding: 5px 0px 5px 0px;
+
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: start;
+  justify-content: start;
+}
+
+.package-card .card-detail ul li img {
+  width: 15px;
+  height: 15px;
+}
+
+.package-card .card-button {
+  padding-left: 10px;
+  height: 25%;
+}
+
+.package-card .card-button button {
+  background-color: #dc2626;
+  color: white;
+
+  padding: 10px 20px 10px 20px;
+  border: none;
+  font-family: "NCL Monster Beast";
+  cursor: pointer;
+}
+
+.package-card .card-button button:hover {
+  background-color: white;
+  color: #dc2626;
+
+  padding: 10px 20px 10px 20px;
+  border: none;
+  font-family: "NCL Monster Beast";
+}
+
+/* faq section */
+.faq-section {
+  width: 100%;
+  height: 70vh;
+  padding: 50px 10px 10px 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+
+  gap: 10px;
+  background-color: #1e1e1e;
+  /* border-top: 2px #fdfdfd2e solid; */
+}
+
+.faq-section .head {
+  width: 80%;
+}
+
+.faq-section p {
+  font-family: "salena";
+
+  font-size: 15px;
+  color: #ffffff7a;
+}
+
+.faq-section h1 {
+  font-family: "NCL Monster Beast";
+  font-weight: 100;
+  font-size: 40px;
+  color: #dc2626;
+}
+
+.faqcard {
+  width: 80%;
+  height: 3em;
+  background-color: #313030;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+
+  padding: 12px 0px 0px 10px;
+  cursor: pointer;
+
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
+  border: 2px #ffffff20 solid;
+}
+
+.faqcard.active {
+  height: 7em;
+}
+
+.faqcard span {
+  width: 40px;
+
+  padding-right: 10px;
+}
+
+.faqcard span img {
+  width: 20px;
+  height: 20px;
+}
+
+.faqcard h2 {
+  font-family: "GeophyDEMO";
+  color: #dc2626;
+  font-size: 22px;
+}
+
+.faqcard p {
+  color: #ffffff7a;
+
+  font-family: "salena";
+  margin-top: 10px;
+  padding-left: 30px;
+  width: 100%;
+  height: 3em;
+}
+
+/* sercive list marquees style  */
+
+.service-marquee {
+  width: 100%;
+  height: 15vh;
+  mask-image: linear-gradient(to right,
+      transparent,
+      black 10%,
+      black 90%,
+      transparent);
+  overflow: hidden;
+}
+
+.marque-track {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+
+  animation: scroll 20s linear infinite;
+
+  gap: 20px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.track-block {
+  padding: 0px 5px 0px 5px;
+
+  height: 10vh;
+  width: 40vh;
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: start;
+  align-items: center;
+}
+
+.track-block .block-top {
+  width: 20vh;
+  display: flex;
+  justify-content: center;
+
+  color: #dc2626;
+}
+
+.track-block .block-bottom {
+  width: 20vh;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: #ffffff7a;
+  font-size: 10px;
+  font-family: "salena";
+
+  text-align: center;
+  padding-top: 5px;
+}
+
+.track-block .block-top img {
+  width: 40px;
+  height: 40px;
+}
+
+.about-section {
+  background-color: #1e1e1e;
+  width: 100%;
+  height: 25vh;
+}
+
+/* our team style */
+
+.meet-team {
+  width: 100%;
+  height: 100;
+  background-color: #31303074;
+
+  padding: 30px 20px 30px 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: start;
+}
+
+.meet-team-detial {
+  margin-left: 10vh;
+  padding: 5px;
+}
+
+.meet-team-detial h1 {
+  font-family: "NCL Monster Beast";
+  font-weight: 100;
+  font-size: 40px;
+  color: #ffffff94;
+}
+
+.meet-team-card {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.team-card:hover {
+  margin-top: -5px;
+  border: 2px #ffffff24 solid;
+  box-shadow: 2px 2px 15px 2px#1e1e1e6f;
+}
+
+.team-card {
+  width: 20%;
+  height: 70vh;
+
+  display: flex;
+  flex-direction: column;
+  border: 2px #313030 solid;
+}
+
+.team-card .card-image1 {
+  width: 100%;
+  height: 55vh;
+
+  background-image:
+    linear-gradient(#dc262600, #dc262600, #000000),
+    url(/gym-management-system/asset/images/traineers/male-boxer-posing-t-shirt-with-arms-crossed.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.team-card .card-image2 {
+  width: 100%;
+  height: 55vh;
+
+  background-image:
+    linear-gradient(#dc262600, #dc262600, #000000),
+    url(/gym-management-system/asset/images/traineers/man-training-gym-side-view.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.team-card .card-image3 {
+  width: 100%;
+  height: 55vh;
+
+  background-image:
+    linear-gradient(#dc262600, #dc262600, #000000),
+    url(/gym-management-system/asset/images/traineers/young-adult-doing-indoor-sport-gym.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.team-card .card-image4 {
+  width: 100%;
+  height: 55vh;
+
+  background-image:
+    linear-gradient(#dc262600, #dc262600, #000000),
+    url(/gym-management-system/asset/images/traineers/fit-woman-gym-side-view.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.team-card-details {
+  width: 100%;
+  height: 15vh;
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-bottom: 2px #dc2626 solid;
+}
+
+.team-card-details h2 {
+  font-family: "NCL Monster Beast";
+  font-weight: 100;
+  font-size: 25px;
+  color: #dc2626;
+}
+
+.team-card-details p {
+  font-family: "salena";
+
+  font-size: 15px;
+  color: #ffffff7a;
+}
+
+
+
+
+/* footer style */
+@font-face {
+    font-family: "Geophy";
+    src: url("font/Geophy - DEMO-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Roboto" ;
+    src: url("font/Roboto-Bold.ttf") format("opentype");
+}
+
+.footer {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding: 60px 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-container {
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: start;
+    
+}
+.footer-box {
+  
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.footer-box h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #555;
+    padding-bottom: 10px;
+    font-family: "GeophyDEMO";
+    color: white;
+}
+
+.footer-box ul {
+    list-style: none;
+}
+
+.footer-box ul li {
+    margin: 10px 0;
+    color: white;
+    font-family: "Roboto";
+}
+
+.footer-box ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: "Roboto";
+}
+
+.footer-box ul li a:hover {
+    color: #DC2626;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 12px 0;
+    color: white;
+    font-family: "Roboto";
+}
+
+.contact-icon {
+    width: 18px;
+    height: 18px;
+    stroke: #DC2626;
+    stroke-width: 2px;
+    flex-shrink: 0;
+}
+
+.hours {
+    margin-top: 15px;
+    font-family: "Roboto";
+}
+
+.newsletter-text {
+    margin-bottom: 15px;
+    color: white;
+}
+
+.footer-box input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+}
+.footer-box .logo-image img {
+  width: 30vh;
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    border-top: 1px solid #444;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+}
+
+.footer-bottom a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-bottom a:hover {
+    color: #DC2626;
+}
+
+.map-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.map-link a {
+    color: white;
+    text-decoration: none;
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+.map-link span {
+    margin-bottom:px;
+}
+
+.map-link a:hover {
+    color:#DC2626;
+}

@@ -1,0 +1,465 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  background-color: #1e1e1e;
+
+  overflow: scroll;
+  scrollbar-width: none;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+
+  background-image: url(/gym-management-system/asset/images/welcome.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  width: 90%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.main-details-background {
+  width: 100%;
+  height: 21vh;
+
+  background-image: url(/gym-management-system/asset/images/Animated\ Shape\ \(3\).svg);
+  background-color: #222222;
+
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 4;
+}
+
+.main-detail {
+  padding: 15px 10px 10px 30px;
+  width: 70%;
+  height: 21vh;
+
+  background-color: #222222;
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: start;
+
+  gap: 10px;
+
+}
+
+.profile {
+  width: 19vh;
+  height: 19vh;
+
+  border-radius: 50%;
+  background-color: #dc2626;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile .icon {
+  width: 8vh;
+  height: 8vh;
+
+  /* background-image: url("/gym-management-system/asset/images/svgs/profile.svg");
+  background-position: center; */
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-details {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+
+  line-height: 28px;
+  gap: 5px;
+
+
+
+}
+
+.profile-details h1 {
+  font-family: "NCL Monster Beast";
+  font-weight: 100;
+  font-size: 35px;
+  color: #dc2626;
+}
+
+.profile-details p {
+  font-family: "salena";
+
+  font-size: 18px;
+  color: #ffffff7a;
+  text-transform: capitalize;
+}
+
+.navigation {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.navigation a {
+  color: #c0c0c0;
+  text-decoration: none;
+}
+
+.navigation ul {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  list-style: none;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 5px;
+}
+
+.navigation ul li {
+  text-decoration: none;
+  padding: 5px 10px 5px 10px;
+  background-color: #313030;
+
+  font-family: "salena";
+
+  font-size: 15px;
+  color: #ffffffa5;
+  display: flex;
+  flex-direction: row;
+  gap: 2px ;
+}
+
+.navigation ul li:hover {
+  background-color: #dadada;
+  color: #1e1e1e;
+}
+.navigation ul li img{
+    width: 25px;
+    padding: 2px;
+}
+
+/* dashboad stylesheets */
+.dashboard-body {
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+  min-height: 110vh;
+  padding-bottom: 20px;
+  background-color: #222222;
+  border: 2px #4d4d4da4 solid;
+  gap: 20px;
+}
+
+
+.members {
+    padding: 50px 0px 10px 0px;
+    width: 100%;
+    background-color: #1e1e1e;
+    
+    display: flex;
+    flex-direction: column;
+
+    justify-content: start;
+    align-items: center;
+
+}
+
+.members .topic {
+    width: 100%;
+    padding: 10px;
+    
+}
+.members .first-container{
+  width: 90%;
+  
+}
+.members .topic h1 {
+    font-family: "NCL Monster Beast";
+    font-size: 30px;
+    color: #DC2626;
+}
+
+.members .topic p {
+    font-family: "salena";
+    font-size: 12px;
+    color: #9191919d;
+}
+
+.first-container{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: start;
+    align-items: center;
+
+    width:82%;
+    
+
+}
+.topic-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10vh;
+    height: 9vh;
+    background-color: #dc2626;
+    /* background-image: url(/gym-mangement-system/asset/images/management/member-management.svg); */
+}
+.topic-icon img{
+    width: 100% ;
+    padding: 15px;
+}
+.management-table {
+    width: 100%;
+    padding: 20px 10px 10px 10px;
+    
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: start;
+    align-items: start;
+
+    gap: 15px;
+}
+
+.management-table .panel a {
+    padding: 10px;
+    background-color: #DC2626;
+    font-family: "NCL Monster Beast";
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.management-table .panel a:hover {
+    background-color: white;
+    color: #DC2626;
+    transition: 0.1s;
+}
+
+
+.panel {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+}
+
+
+.tableManagement {
+    
+    border: none;
+    border-collapse: collapse;
+    overflow: scroll;
+}
+
+.tableManagement th {
+    font-family: "NCL Monster Beast";
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px 30px 10px 30px;
+    background-color: #DC2626;
+    border: none;
+
+}
+
+.tableManagement td {
+    background-color: #1e1e1e;
+    padding: 15px 30px 15px 30px;
+    font-size: 16px;
+
+    color: #ebeaea;
+    font-family: "Roboto";
+
+}
+
+.tableManagement tr {
+    border-bottom: 1px solid #8989899e;
+    border-left: 1px solid #8989899e;
+    border-right: 1px solid #8989899e;
+}
+
+.tableManagement #functiontable {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 15px;
+
+}
+
+.action .details-btn {
+    padding: 5px 10px 5px 10px;
+    background-color: #99999974;
+    color: #ffffff;
+    text-decoration: none;
+}
+.action .details-btn:hover{
+    transition: .1s;
+    background-color: #464646c0;
+}
+.tdetails-btn {
+    padding: 5px 10px 5px 10px;
+    background-color: #99999974;
+    color: #ffffff;
+    text-decoration: none;
+}
+.tdetails-btn:hover{
+    transition: .1s;
+    background-color: #464646c0;
+}
+.adetails-btn {
+    padding: 5px 10px 5px 10px;
+    background-color: #99999974;
+    color: #ffffff;
+    text-decoration: none;
+}
+.adetails-btn:hover{
+    transition: .1s;
+    background-color: #464646c0;
+}
+
+.action .delete-btn {
+    padding: 5px 10px 5px 10px;
+    background-color: #DC2626;
+    color: #ffffff;
+    text-decoration: none;
+}
+.action .delete-btn:hover {
+    transition: .1s;
+    background-color: #841515;
+}
+
+.model {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background-color: #0000009e;
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+
+}
+
+.model .model-content {
+    padding: 20px;
+    width: 60vh;
+    
+    background-color: #1e1e1e;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 5px;
+    left: 10vh;
+    top: 10vh;
+    border: 2px solid #5252526a;
+
+}
+
+.model .model-content .model-topic{
+    font-family: "NCL Monster Beast";
+    font-size: 14px;
+    color: #DC2626;
+}
+
+.close {
+    position: absolute;
+    left: 65%;
+    transform: translate(-120%, -20%);
+
+}
+
+.close button {
+    background-color: #DC2626;
+    color: white;
+    border: none;
+    padding: 5px 10px 5px 10px;
+    cursor: pointer;
+    font-family: "NCL Monster Beast";
+    font-size: 20px;
+}
+
+.close button:hover {
+    background-color: white;
+    color: #DC2626;
+    transition: 0.1s;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+}
+
+.content h2 {
+    font-family: "salena";
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.content p {
+    font-family: "Roboto";
+    color: #9191919d;
+    font-size: 16px;
+}
+
+.content span {
+    color: white;
+}
+
+
+.btn {
+    margin-top: 10px;
+}
+
+.btn button {
+    background-color: #DC2626;
+    color: white;
+    border: none;
+    padding: 5px 10px 5px 10px;
+    cursor: pointer;
+    font-family: "NCL Monster Beast";
+}
+
+.btn button:hover {
+    background-color: white;
+    color: #DC2626;
+    transition: 0.1s;
+}
+
+#c{
+    background-color: #272727c0;
+}

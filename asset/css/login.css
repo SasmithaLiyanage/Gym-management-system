@@ -1,0 +1,462 @@
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        .main {
+            
+            background-image: linear-gradient( #05050500 ,#0f0c0c ), url("/gym-management-system/asset/images/login-back.jpg");
+            background-size: cover;
+            background-position: center;
+
+           
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            padding-top: 30px;
+            overflow: scroll;
+            scrollbar-width: none;
+
+        }
+
+        .container {
+
+            background-color: transparent;
+            width: 1100px;
+
+            border-radius: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            padding: 20px;
+
+        }
+
+        .topic_head {
+            background-color: #2b2a2a;
+            border: 2px #3b3b3bc5 solid;
+
+            display: flex;
+            flex-direction: row;
+
+            
+            width: 770px;
+            height: 110px;
+            padding: 15px;
+
+
+            justify-content: space-between;
+            align-items: flex-endq;
+
+        }
+
+        .topic_head h2 {
+            font-size: 30px;
+            font-weight: 50;
+            font-family: "NCL Monster Beast";
+            color: #dc2626;
+
+        }
+
+        .topic_head h4 {
+
+            font-family: "salena";
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.852);
+
+        }
+
+        .detail {
+            
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background-color: greenyellow
+        }
+
+        textarea {
+            resize: none;
+            background-color: #a8a8a8;
+            color: rgb(46, 45, 45);
+            font-family: "Roboto";
+            width: 580px;
+            height: 100px;
+        }
+
+        .div1 {
+            color: aliceblue;
+            width: 690px;
+            height: 1150px;
+            background-color: #2b2a2a;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 10px;
+            padding: 10px;
+            border: 2px solid #6464643a;
+        }
+
+        .form1 form {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            gap: 30px;
+        }
+
+        .form1 .personal-details {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .package {
+            display: flex;
+            flex-direction: column;
+            gap: 1px;
+        }
+
+        .fitness-details {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .bottom {
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+
+        }
+
+        .package2 {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .package2 input {
+            background-color: #fffdfdb1;
+            width: 120px;
+        }
+
+        .package2 input::placeholder {
+            color: #40404084;
+        }
+
+        .package2 select {
+            background-color: #fffdfdb1;
+            color: rgba(41, 41, 41, 0.698);
+            width: 200px;
+            font-size: 16px;
+            padding: 8px;
+        }
+
+        .package select {
+            background-color: #fffdfdb1;
+            color: #474747;
+            width: 200px;
+            font-size: 16px;
+            padding: 8px;
+        }
+
+        .budget {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .form1 {
+            width: 650px;
+            height: 1300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            margin-left: 16px;
+
+
+        }
+
+        .medical {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .account {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+
+        .form1 h2 {
+            font-family: "NCL Monster Beast";
+            color: #dc2626;
+
+        }
+
+        .form1 label {
+            color: #9a9a9a;
+            font-size: 16px;
+            text-transform: capitalize;
+            font-family: "salena";
+        }
+
+        .div2 {
+            display: flex;
+            width: 80px;
+
+            background-color: #b50303e5;
+            flex-direction: column;
+            align-items: center;
+            gap: 140px;
+            border: 2px solid #6464643a;
+
+        }
+
+        #label1 {
+            color: white;
+            border: 2px black solid;
+        }
+
+        .img1 {
+            margin-top: 30px;
+            display: flex;
+        }
+
+        .img2 {
+            margin-top: 200px;
+            display: flex;
+
+        }
+
+        .img3 {
+            margin-top: -70px;
+            display: flex;
+
+        }
+
+        .img4 {
+            margin-top: -10px;
+            display: flex;
+
+        }
+
+        .img5 {
+            margin-top: -65px;
+            display: flex;
+
+        }
+
+        input {
+
+            width: 580px;
+            padding: 8px;
+            border: 1px solid #535353ad;
+            font-size: 16px;
+            background-color: #fffdfd9f;
+            color: rgb(46, 45, 45);
+            font-family: "Roboto";
+        }
+
+        input::placeholder {
+            color: #40404084;
+        }
+
+        select {
+            color: rgb(46, 45, 45);
+            width: 580px;
+            padding: 10px;
+            border: 2px solid #b503032f;
+            font-size: 16px;
+            background-color: #a8a8a8;
+        }
+
+        .check_box {
+            padding: 5px;
+            font-weight: 50px;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            gap: 5px;
+        }
+
+        .check_box input {
+            width: 10px;
+            padding: 0;
+        }
+
+        .check_box input .check_box label {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        #button {
+            background-color: #DC2626;
+            color: white;
+            border: none;
+            padding: 10px 5px 10px 5px;
+            cursor: pointer;
+            font-family: "NCL Monster Beast";
+            font-size: 16px;
+            
+        }
+
+        #button:hover {
+            background-color: white;
+            color: #DC2626;
+            transition: 0.1s;
+        }
+
+
+
+
+        /* check_box styles */
+
+        .check-container {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        /* Hide default checkbox */
+        .check-container input {
+            display: none;
+        }
+
+        /* Custom box */
+        .checkmark {
+            width: 22px;
+            height: 22px;
+            border: 2px solid red;
+            border-radius: 6px;
+            position: relative;
+            transition: 0.3s;
+        }
+
+        /* When checked */
+        .check-container input:checked+.checkmark {
+            background-color: red;
+        }
+
+        /* Check symbol */
+        .check-container input:checked+.checkmark::after {
+
+            color: white;
+            position: absolute;
+            left: 4px;
+            top: -2px;
+            font-size: 18px;
+        }
+        .back-button{
+            display: flex;
+            justify-content: end;
+            align-items: end;
+           
+            
+
+            
+            
+        }
+        .login-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+        }
+
+        .login-container {
+            background-color: #2b2a2a;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            border: 1px solid #3b3b3bc5;
+        }
+
+        .login-header h2 {
+            font-family: "NCL Monster Beast", sans-serif;
+            color: #dc2626;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 32px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            color: #9a9a9a;
+            font-family: "salena", sans-serif;
+            font-size: 18px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            background-color: #fffdfdb1;
+            border: none;
+            color: #333;
+            font-size: 16px;
+        }
+
+        .btn-submit {
+            background-color: #DC2626;
+            color: white;
+            border: none;
+            padding: 12px;
+            cursor: pointer;
+            font-family: "NCL Monster Beast", sans-serif;
+            font-size: 18px;
+            width: 100%;
+            transition: 0.3s;
+        }
+
+        .btn-submit:hover {
+            background-color: white;
+            color: #DC2626;
+        }
+
+        .error-message {
+            color: #ff4444;
+            text-align: center;
+            margin-bottom: 10px;
+            font-family: sans-serif;
+        }
+
+        .register-link {
+            text-align: center;
+            color: #9a9a9a;
+            margin-top: 10px;
+            font-family: sans-serif;
+        }
+
+        .register-link a {
+            color: #dc2626;
+            text-decoration: none;
+        }
+
+        .register-link a:hover {
+            text-decoration: underline;
+        }

@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+
+    background:url("/gym-management-system/asset/images/welcome.jpg");
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.container {
+    background-color: #000000d2;
+
+    width: 30%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.form-box {
+    width: 100%;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+input {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    background: rgb(204, 202, 202);
+    border: none;
+    outline: none;
+    font-size: 15px;
+    margin-bottom: 20px;
+
+    font-family: "salena";
+
+
+}
+
+.label {
+
+    font-size: 15px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #be0303;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 10px;
+    transition: 0.55;
+    font-family: "salena";
+}
+
+button:hover {
+    background: #ff0202;
+}
+
+.form-box p {
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: white;
+    font-family: "salena";
+}
+
+.form-box p a {
+    color: rgb(225, 47, 47);
+    text-decoration: none;
+}
+
+.form-box p a:hover {
+    text-decoration: underline;
+}
+
+.form-box h2 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 0%;
+
+    color: white;
+
+    font-family: "NCL Monster Beast" ;
+}
+
+.form-box label{
+    color: white;
+    font-size: 15px;
+
+    font-family: "salena";
+}
+
+.label-class{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 50vh;
+   
+}
+
+.container2 {
+    background-color: #000000d2;
+
+    width: 30%;
+    height: 85vh;
+
+
+}
+
+select {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    background: rgb(204, 202, 202);
+    border: none;
+    outline: none;
+    font-size: 15px;
+    margin-bottom: 20px;
+
+    font-family: "salena";
+}
+
+
